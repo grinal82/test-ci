@@ -1,11 +1,9 @@
 export function healthStatus(hero) {
-  if (hero.health < 15) {
-    return 'critical';
-  }
-  if (hero.health >= 15 || hero.health <= 50) {
+  if (hero.health > 80) {
+    return 'healthy';
+  } if (hero.health >= 15 && hero.health <= 80) {
     return 'wounded';
-  }
-  return 'healthy';
+  } return 'critical';
 }
 
 export function sortedHealth(heroes) {

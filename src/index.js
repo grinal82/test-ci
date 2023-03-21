@@ -1,9 +1,4 @@
 import './css/style.css';
 
+// eslint-disable-next-line no-unused-vars
 import sortedHealth from './js/app';
-
-console.log(sortedHealth([
-  { name: 'мечник', health: 10 },
-  { name: 'маг', health: 100 },
-  { name: 'лучник', health: 80 },
-]));
